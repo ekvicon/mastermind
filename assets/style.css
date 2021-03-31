@@ -67,14 +67,26 @@ h1, h2, h3 {
 .codebreaker-form {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px 0;
-  min-width: 320px;
+  margin: 10px auto;
+  width: 150px;
 }
 .codebreaker-input-column {
   width: 25%;
 }
 .column-radio-label {
   margin-left: 5px;
+}
+.color-radio {
+  display: grid;
+  place-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 10px auto;
+  padding: 2px 7px;
+  font-size: 0.8rem;
+  text-align: center;
+  box-shadow: 0 0 0 1px black, 0 0 0 2px white;
 }
 .codebreaker-guess-button {
   width: 100%;
@@ -88,8 +100,8 @@ h1, h2, h3 {
   border: 0;
   cursor: pointer;
   transition:
-    background-color 0.2s ease-in-out,
-    box-shadow 0.5s ease-in-out;
+  background-color 0.2s ease-in-out,
+  box-shadow 0.5s ease-in-out;
 }
 .codebreaker-guess-button:hover {
   background: var(--button-background-hover);
